@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include hr_doc_expire *.css
+recursive-include hr_doc_expire *.csv
+recursive-include hr_doc_expire *.html
+recursive-include hr_doc_expire *.ico
+recursive-include hr_doc_expire *.js
+recursive-include hr_doc_expire *.json
+recursive-include hr_doc_expire *.md
+recursive-include hr_doc_expire *.png
+recursive-include hr_doc_expire *.py
+recursive-include hr_doc_expire *.svg
+recursive-include hr_doc_expire *.txt
+recursive-exclude hr_doc_expire *.pyc

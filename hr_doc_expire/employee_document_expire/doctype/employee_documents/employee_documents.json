@@ -1,0 +1,93 @@
+{
+ "creation": "2020-06-26 02:23:35.688161",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "doc_name",
+  "issue_date",
+  "expire_date",
+  "reminder_days",
+  "doc_type",
+  "doc_no",
+  "issue_place",
+  "document_binary",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "doc_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Document Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "issue_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Issue Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expire_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Expire Date",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "reminder_days",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reminder Before Days",
+   "reqd": 1
+  },
+  {
+   "default": "Passport",
+   "fieldname": "doc_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Document Type",
+   "options": "Passport\nLicense\nIqama\nSaudi ID\nMedical Examination\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "doc_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Document ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "issue_place",
+   "fieldtype": "Data",
+   "label": "Issue Place"
+  },
+  {
+   "fieldname": "document_binary",
+   "fieldtype": "Attach",
+   "label": "Document",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "in_list_view": 1,
+   "label": "Description"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-06-26 03:04:48.785551",
+ "modified_by": "Administrator",
+ "module": "Employee Document Expire",
+ "name": "Employee Documents",
+ "owner": "admin@erpnext.com",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
